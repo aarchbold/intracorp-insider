@@ -1,0 +1,29 @@
+// animations styles
+
+// Links
+
+@keyframes pulse-link {
+    0% {
+        color: white;
+    }
+    25% {
+        color: #4cc1fc;
+    }
+    75% {
+        color: white;
+    }
+    100% {
+        color: #4cc1fc;
+    }
+}
+
+// Shoting Stars
+
+@keyframes shootingStar {
+    0% {
+        transform: translate(-2000px,1000px)
+    }
+    100% {
+        transform: translate(3000px,-1000px)
+    }
+}
