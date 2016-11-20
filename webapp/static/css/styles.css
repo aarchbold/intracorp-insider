@@ -106,78 +106,64 @@ table {
 }
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
- * http://applemusic.tumblr.com/
- * https://jsfiddle.net/xq56dmrh/
+ * FaktPro
  */
-/** Ultra Light */
 @font-face {
-  font-family: "San Francisco";
-  font-weight: 100;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
+  font-family: 'FaktPro-Light';
+  src: url("../css/fonts/FaktPro-Light.woff") format("woff");
 }
-/** Thin */
 @font-face {
-  font-family: "San Francisco";
-  font-weight: 200;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
+  font-family: 'FaktPro-Normal';
+  src: url("../css/fonts/FaktPro-Normal.woff") format("woff");
 }
-/** Regular */
 @font-face {
-  font-family: "San Francisco";
-  font-weight: 400;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+  font-family: 'FaktPro-Semibold';
+  src: url("../css/fonts/FaktPro-SemiBold.woff") format("woff");
 }
-/** Medium */
 @font-face {
-  font-family: "San Francisco";
-  font-weight: 500;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
+  font-family: 'FaktPro-Bold';
+  src: url("../css/fonts/FaktPro-Bold.woff") format("woff");
 }
-/** Semi Bold */
-@font-face {
-  font-family: "San Francisco";
-  font-weight: 600;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
-}
-/** Bold */
-@font-face {
-  font-family: "San Francisco";
-  font-weight: 700;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
-}
-.btn-default {
+.intracorp-btn {
   transition: all 0.125s;
-  padding: 15px 40px;
-  background-color: #212a2e;
+  padding: 16px 40px 13px;
+  background-color: #ffffff;
   text-transform: uppercase;
-  color: white;
+  color: #010101;
   display: inline-block;
-  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid #d7d8d9;
 }
-.btn-default:hover {
-  background-color: #4cc1fc;
-  color: #5c6369;
+.intracorp-btn:hover {
+  background-color: #010101;
+  border: 1px solid #010101;
+  color: #ffffff;
 }
-.btn-default.-no-hover:hover {
+.intracorp-btn.-no-hover:hover {
   background-color: #212a2e;
   color: white;
 }
 @media (max-width: 640px) {
-  .btn-default {
+  .intracorp-btn {
     font-size: 16px;
   }
 }
 @media (max-width: 490px) {
-  .btn-default {
+  .intracorp-btn {
     font-size: 15px;
   }
 }
 
+.btn-margin-right {
+  margin-right: 10px;
+}
+
 body {
-  color: white;
+  color: #010101;
   font-size: 20px;
-  font-family: San Francisco,Roboto,sans-serif;
-  background: black url(../images/backgrounds/bg-body.jpg) 50% 0;
+  font-family: FaktPro-Light,sans-serif;
+  background-color: #ffffff;
   overflow-x: hidden;
 }
 @media (max-width: 640px) {
@@ -186,14 +172,31 @@ body {
   }
 }
 
-h2 {
+header {
+  width: 100%;
+  height: 75px;
+  border-bottom: 1px solid #d7d8d9;
+}
+
+.main-body {
+  width: 100%;
+}
+
+.section-pricing {
+  max-width: 1200px;
+  margin: 60px auto 0;
+  padding: 0 15px;
+}
+
+h1 {
   margin-bottom: 10px;
-  color: white;
-  line-height: 1.4;
+  color: #000000;
+  font-size: 50px;
+  text-transform: uppercase;
 }
 
 p {
-  color: #5c6369;
+  color: #010101;
   line-height: 1.4;
   margin-bottom: 40px;
 }
@@ -201,18 +204,95 @@ p a {
   color: #5c6369;
 }
 
-a {
-  color: white;
-  text-decoration: underline;
-}
-a:hover {
-  text-decoration: none;
+nav {
+  position: relative;
+  height: 75px;
 }
 
-ul {
-  margin-bottom: 40px;
-  color: #5c6369;
-  list-style: circle;
-  padding-left: 30px;
-  line-height: 1.4;
+.nav-logo {
+  height: 75px;
+}
+
+.nav-tools {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.nav-tools__menu {
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+@media (max-width: 875px) {
+  .nav-tools__menu {
+    float: none;
+    position: absolute;
+    top: 76px;
+    right: 0px;
+    margin-right: 0;
+    width: 200px;
+    background-color: #010101;
+  }
+}
+
+.intracorp-nav__profile-btn {
+  display: inline-block;
+  border-left: 1px solid #d7d8d9;
+  height: 75px;
+  width: 75px;
+  text-decoration: none;
+  color: #010101;
+  float: left;
+}
+.intracorp-nav__profile-btn:before {
+  margin: 22px;
+  line-height: 1.8;
+}
+.intracorp-nav__profile-btn.-menu-bars {
+  display: none;
+}
+@media (max-width: 875px) {
+  .intracorp-nav__profile-btn.-menu-bars {
+    display: block;
+  }
+}
+
+.intracorp-nav__menu-btn {
+  height: 75px;
+  float: left;
+  overflow: hidden;
+  margin: 0 10px;
+}
+.intracorp-nav__menu-btn a {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 32px 0;
+  color: #010101;
+  font-size: 14px;
+  display: block;
+}
+@media (max-width: 875px) {
+  .intracorp-nav__menu-btn a {
+    padding: 20px 18px 20px 0;
+    color: #ffffff;
+  }
+}
+.intracorp-nav__menu-btn:hover {
+  height: 72px;
+  border-bottom: 3px solid #010101;
+}
+@media (max-width: 875px) {
+  .intracorp-nav__menu-btn {
+    float: none;
+    text-align: right;
+    height: 49px;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    margin: 0;
+  }
+  .intracorp-nav__menu-btn:hover {
+    height: 49px;
+    border-bottom: 1px solid #ffffff;
+  }
 }

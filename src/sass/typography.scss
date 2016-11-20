@@ -1,32 +1,17 @@
 // common typography styles
 
-h2 {
+h1 {
     margin-bottom: 10px;
-    color: white;
-    line-height: 1.4;
+    color: $body-font-color-heading;
+    font-size: 50px;
+    text-transform: uppercase;
 }
 
 p {
-    color: #5c6369;
+    color: $body-font-color;
     line-height: 1.4;
     margin-bottom: 40px;
     a {
         color: #5c6369;
     }
-}
-
-a {
-    color: white;
-    text-decoration: underline;
-    &:hover {
-        text-decoration: none;
-    }
-}
-
-ul {
-    margin-bottom: 40px;
-    color: #5c6369;
-    list-style: circle;
-    padding-left: 30px;
-    line-height: 1.4;
 }

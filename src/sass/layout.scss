@@ -1,1 +1,17 @@
 // layout styles
+
+header {
+    width: 100%;
+    height: 75px;
+    border-bottom: 1px solid $body-border-color;
+}
+
+.main-body {
+    width: 100%;
+}
+
+.section-pricing {
+    max-width: 1200px;
+    margin: 60px auto 0;
+    padding: 0 15px;
+}

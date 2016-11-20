@@ -1,16 +1,19 @@
 // Buttons styles
 
-.btn-default {
+.intracorp-btn {
     transition: all 0.125s;
-    padding: 15px 40px;
-    background-color: #212a2e;
+    padding: 16px 40px 13px;
+    background-color: $body-background-color;
     text-transform: uppercase;
-    color: white;
+    color: $body-font-color;
     display: inline-block;
-    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    border: 1px solid $body-border-color;
     &:hover {
-        background-color: #4cc1fc;
-        color: #5c6369;
+        background-color: $body-font-color;
+        border: 1px solid $body-font-color;
+        color: $body-background-color;
     }
     &.-no-hover {
         &:hover {
@@ -24,4 +27,8 @@
     @media (max-width: $breakpoint-phone) {
         font-size: 15px;
     }
+}
+
+.btn-margin-right {
+    margin-right: 10px;
 }
