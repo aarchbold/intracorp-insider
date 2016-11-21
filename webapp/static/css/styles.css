@@ -159,6 +159,10 @@ table {
   margin-right: 10px;
 }
 
+.btn-footer {
+  margin: 10px 0 40px 0;
+}
+
 body {
   color: #010101;
   font-size: 20px;
@@ -295,4 +299,29 @@ nav {
     height: 49px;
     border-bottom: 1px solid #ffffff;
   }
+}
+
+footer {
+  margin: 60px 0;
+  border-top: 1px solid #d7d8d9;
+}
+footer .intracorp-footer {
+  padding-top: 30px;
+  text-align: center;
+}
+footer .intracorp-footer__links {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #c4c5c7;
+}
+footer .intracorp-footer__links a {
+  text-decoration: none;
+  color: #010101;
+  padding-right: 10px;
+}
+footer .intracorp-footer__links a:hover {
+  text-decoration: underline;
+}
+footer .intracorp-footer__links span {
+  padding-left: 10px;
 }

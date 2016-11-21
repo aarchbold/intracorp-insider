@@ -1,4 +1,1 @@
-$(function(){
-  console.log('=== JQuery is working ===');
-});
-
+$(function(){console.log("=== JQuery is working ===")});
