@@ -20,7 +20,7 @@ nav {
     float: left;
     margin-right: 20px;
     @media (max-width: $breakpoint-nav) {
-        // display: none;
+        display: none;
         float: none;
         position: absolute;
         top: 76px;

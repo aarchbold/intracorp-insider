@@ -16,10 +16,17 @@ h2 {
     border-bottom: 2px solid $body-font-color-heading
 }
 
+h3 {
+    font-family: FaktPro-Semibold,sans-serif;
+    color: $body-font-color;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 p {
     color: $body-font-color;
     line-height: 1.4;
-    margin-bottom: 40px;
     a {
         color: #5c6369;
     }
