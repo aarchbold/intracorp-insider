@@ -7,6 +7,15 @@ h1 {
     text-transform: uppercase;
 }
 
+h2 {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    color: $body-font-color-light;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-bottom: 2px solid $body-font-color-heading
+}
+
 p {
     color: $body-font-color;
     line-height: 1.4;
