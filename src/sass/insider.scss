@@ -18,3 +18,147 @@
         color: $body-font-color-light;
     }
 }
+
+.insider-progress {
+    margin-top: 30px;
+}
+
+.insider-progress__bar {
+    position: relative;
+    margin-top: 20px;
+    height: 54px;
+    width: 100%;
+    .insider-progress__bar-meter {
+        position: absolute;
+        height: 10px;
+        width: 100%;
+        top: 22px;
+        background-color: $progress-bar-bg;
+        .insider-progress__bar-fill {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 10px;
+            width: 0;
+            background-color: $progress-bar-fill;
+            &.-active1 {
+                width: 7%;
+            }
+            &.-active3 {
+                width: 20%;
+            }
+            &.-active5 {
+                width: 38.5%;
+            }
+            &.-active10 {
+                width: 74%;
+            }
+            &.-active20 {
+                width: 100%;
+            }
+        }
+    }
+    .insider-progress__bar-number {
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        width: 50px;
+        height: 50px;
+        background-color: $progress-bar-bg;
+        color: $body-font-color-ultralight;
+        z-index: 1;
+        &.-slot1 {
+            left: 0;
+        }
+        &.-slot3 {
+            left: 10%;
+        }
+        &.-slot5 {
+            left: 25%;
+        }
+        &.-slot10 {
+            left: 48%;
+        }
+        &.-slot20 {
+            right: 0;
+        }
+        &.-active {
+            background-color: $progress-bar-fill;
+        }
+        span {
+            position: relative;
+            font-family: FaktPro-Semibold,sans-serif;
+            font-size: 30px;
+            display: block;
+            text-align: center;
+            top: 54%;
+            transform: translateY(-50%);
+            line-height: 1.4;
+            z-index: 1;
+        }
+    }
+}
+
+.section-rewards__table {
+    width: 100%;
+    border-spacing: 4px;
+    border-collapse: separate;
+    tr, thead {
+        min-height: 40px;
+    }
+    td {
+        padding: 10px 16px;
+        width: 10%;
+        &:first-child {
+            width: 50%;
+            text-align: left;
+        }
+    }
+    .section-rewards__table-hdr {
+        vertical-align: top;
+        padding: 10px 0;
+        line-height: 1.4;
+        text-align: left;
+        padding-right: 50px;
+    }
+}
+
+.section-rewards__table-label {
+    position: relative;
+    text-align: left;
+    height: 120px;
+    overflow: hidden;
+    color: $body-font-color-ultralight;
+    font-size: 16px;
+    text-transform: uppercase;
+    span {
+        position: absolute;
+        top: 60px;
+        z-index: 2;
+        display: block;
+        padding: 0 20px;
+    }
+    .-insider, .-elite, .-super-elite, .-super-plus, .-premier {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        background-color: $table-insider;
+        z-index: 1;
+    }
+    .-elite {
+        background-color: $table-elite;
+    }
+    .-super-elite {
+        height: 100%;
+        background-color: $table-super-elite;
+    }
+    .-super-plus {
+        background-color: $table-super-plus;
+    }
+    .-premier {
+        background-color: $table-premier;
+    }
+}

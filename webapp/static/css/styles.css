@@ -126,13 +126,13 @@ table {
 }
 .intracorp-btn {
   transition: all 0.125s;
-  padding: 16px 40px 13px;
+  padding: 18px 46px 15px;
   background-color: #ffffff;
   text-transform: uppercase;
   color: #010101;
   display: inline-block;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 15px;
   border: 1px solid #d7d8d9;
 }
 .intracorp-btn:hover {
@@ -205,6 +205,152 @@ body {
   color: #c4c5c7;
 }
 
+.insider-progress {
+  margin-top: 30px;
+}
+
+.insider-progress__bar {
+  position: relative;
+  margin-top: 20px;
+  height: 54px;
+  width: 100%;
+}
+.insider-progress__bar .insider-progress__bar-meter {
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  top: 22px;
+  background-color: #f1f1f2;
+}
+.insider-progress__bar .insider-progress__bar-meter .insider-progress__bar-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+  width: 0;
+  background-color: #7998ac;
+}
+.insider-progress__bar .insider-progress__bar-meter .insider-progress__bar-fill.-active1 {
+  width: 7%;
+}
+.insider-progress__bar .insider-progress__bar-meter .insider-progress__bar-fill.-active3 {
+  width: 20%;
+}
+.insider-progress__bar .insider-progress__bar-meter .insider-progress__bar-fill.-active5 {
+  width: 38.5%;
+}
+.insider-progress__bar .insider-progress__bar-meter .insider-progress__bar-fill.-active10 {
+  width: 74%;
+}
+.insider-progress__bar .insider-progress__bar-meter .insider-progress__bar-fill.-active20 {
+  width: 100%;
+}
+.insider-progress__bar .insider-progress__bar-number {
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #f1f1f2;
+  color: #ffffff;
+  z-index: 1;
+}
+.insider-progress__bar .insider-progress__bar-number.-slot1 {
+  left: 0;
+}
+.insider-progress__bar .insider-progress__bar-number.-slot3 {
+  left: 10%;
+}
+.insider-progress__bar .insider-progress__bar-number.-slot5 {
+  left: 25%;
+}
+.insider-progress__bar .insider-progress__bar-number.-slot10 {
+  left: 48%;
+}
+.insider-progress__bar .insider-progress__bar-number.-slot20 {
+  right: 0;
+}
+.insider-progress__bar .insider-progress__bar-number.-active {
+  background-color: #7998ac;
+}
+.insider-progress__bar .insider-progress__bar-number span {
+  position: relative;
+  font-family: FaktPro-Semibold,sans-serif;
+  font-size: 30px;
+  display: block;
+  text-align: center;
+  top: 54%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  line-height: 1.4;
+  z-index: 1;
+}
+
+.section-rewards__table {
+  width: 100%;
+  border-spacing: 4px;
+  border-collapse: separate;
+}
+.section-rewards__table tr, .section-rewards__table thead {
+  min-height: 40px;
+}
+.section-rewards__table td {
+  padding: 10px 16px;
+  width: 10%;
+}
+.section-rewards__table td:first-child {
+  width: 50%;
+  text-align: left;
+}
+.section-rewards__table .section-rewards__table-hdr {
+  vertical-align: top;
+  padding: 10px 0;
+  line-height: 1.4;
+  text-align: left;
+  padding-right: 50px;
+}
+
+.section-rewards__table-label {
+  position: relative;
+  text-align: left;
+  height: 120px;
+  overflow: hidden;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.section-rewards__table-label span {
+  position: absolute;
+  top: 60px;
+  z-index: 2;
+  display: block;
+  padding: 0 20px;
+}
+.section-rewards__table-label .-insider, .section-rewards__table-label .-elite, .section-rewards__table-label .-super-elite, .section-rewards__table-label .-super-plus, .section-rewards__table-label .-premier {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #ced0d1;
+  z-index: 1;
+}
+.section-rewards__table-label .-elite {
+  background-color: #7998ac;
+}
+.section-rewards__table-label .-super-elite {
+  height: 100%;
+  background-color: #7aaed5;
+}
+.section-rewards__table-label .-super-plus {
+  background-color: #4d738a;
+}
+.section-rewards__table-label .-premier {
+  background-color: #303e48;
+}
+
 header {
   width: 100%;
   height: 75px;
@@ -217,7 +363,7 @@ header {
 
 .section-insider {
   max-width: 1200px;
-  margin: 60px auto 0;
+  margin: 100px auto 0;
   padding: 0 15px;
 }
 
@@ -244,14 +390,13 @@ h2 {
 h3 {
   font-family: FaktPro-Semibold,sans-serif;
   color: #010101;
-  font-size: 15px;
+  font-size: 16px;
   text-transform: uppercase;
-  font-weight: bold;
 }
 
 p {
   color: #010101;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 p a {
   color: #5c6369;
