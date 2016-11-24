@@ -103,15 +103,47 @@
     width: 100%;
     border-spacing: 4px;
     border-collapse: separate;
-    tr, thead {
+    thead {
         min-height: 40px;
+        tr {
+            background-color: white;
+        }
+    }
+    tr {
+        min-height: 40px;
+        background-color: $table-row-odd;
+        &:nth-child(even) {
+            background-color: $table-row-even;
+        }
     }
     td {
         padding: 10px 16px;
         width: 10%;
+        text-align: center;
+        vertical-align: middle;
         &:first-child {
             width: 50%;
             text-align: left;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+        &.rewards-table__elite-col {
+            background-color: $table-col-elite;
+        }
+        .-check-insider {
+            color: $table-insider;
+        }
+        .-check-elite {
+            color: $table-elite;
+        }
+        .-check-super-elite {
+            color: $table-super-elite;
+        }
+        .-check-elite-plus {
+            color: $table-super-plus;
+        }
+        .-check-premier {
+            color: $table-premier;
         }
     }
     .section-rewards__table-hdr {
@@ -161,4 +193,10 @@
     .-premier {
         background-color: $table-premier;
     }
+}
+
+.section-rewards__table-footer {
+    padding: 10px 0px;
+    font-size: 12px;
+    color: $body-font-color-light;
 }
