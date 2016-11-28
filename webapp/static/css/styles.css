@@ -487,6 +487,7 @@ body {
   text-align: left;
   vertical-align: bottom;
   height: 79px;
+  padding-right: 10px;
 }
 .section-sales__table tr td {
   padding: 10px 10px 10px 0;
