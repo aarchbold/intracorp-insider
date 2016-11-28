@@ -235,3 +235,48 @@
         }
     }
 }
+
+.section-sales__h2 {
+    margin-bottom: 0;
+}
+
+.section-sales-container {
+    border-bottom: 2px solid $body-font-color-heading;
+    h3 {
+        padding: 18px 0 16px;
+        cursor: pointer;
+        .btn-sales {
+            padding-right: 10px;
+        }
+    }
+}
+
+.section-sales__table {
+    width: 100%;
+    border-spacing: 4px;
+    thead {
+        tr {
+            border-bottom: 1px solid $body-font-color-heading;
+            th {
+                position: relative;
+                text-align: left;
+                vertical-align: bottom;
+                height: 79px;
+                h3 {
+                }
+            }
+        }
+    }
+    tr {
+        td {
+            padding: 10px 10px 10px 0;
+            font-size: 14px;
+        }
+        &.section-sales__table-footer {
+            border-top: 1px solid $body-font-color-heading;
+            td {
+                padding: 20px 0 16px;
+            }
+        }
+    }
+}
