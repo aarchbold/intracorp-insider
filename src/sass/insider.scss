@@ -248,6 +248,9 @@
         .btn-sales {
             padding-right: 10px;
         }
+        &.-open {
+            border-bottom: 1px solid $body-font-color-light;
+        }
     }
 }
 
@@ -263,7 +266,18 @@
                 vertical-align: bottom;
                 height: 79px;
                 padding-right: 10px;
-                h3 {}
+                h3 {
+                    font-size: 14px;
+                }
+                &.section-sales__table-homeowner {
+                    width: 12%;
+                }
+                &.section-sales__table-brokerage {
+                    width: 25%;
+                }
+                &.section-sales__table-price {
+                    width: 10%;
+                }
             }
         }
     }
@@ -276,6 +290,16 @@
             border-top: 1px solid $body-font-color-heading;
             td {
                 padding: 20px 0 16px;
+            }
+        }
+        &.section-sales__table-last-row {
+            td {
+                padding-bottom: 25px;
+            }
+        }
+        &:first-child {
+            td {
+                padding-top: 28px;
             }
         }
     }
