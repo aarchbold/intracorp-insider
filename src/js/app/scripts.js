@@ -69,6 +69,22 @@ $(function(){
         slidesToShow: 3,
         slidesToScroll: 1,
         prevArrow: '<div class="btn-carousel-control -prev"><i class="carousel-control__btn fa fa-chevron-left"></i></div>',
-        nextArrow: '<div class="btn-carousel-control -next"><i class="carousel-control__btn fa fa-chevron-right"></i></div>'
+        nextArrow: '<div class="btn-carousel-control -next"><i class="carousel-control__btn fa fa-chevron-right"></i></div>',
+        responsive: [
+            {
+              breakpoint: 900,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 555,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+        ]
     });
 });

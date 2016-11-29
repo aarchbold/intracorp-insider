@@ -38,11 +38,21 @@
     top: 18%;
     text-align: center;
     cursor: pointer;
+    background-color: $body-background-color;
+    z-index: 1;
     &.-prev {
         left: -45px;
+        @media (max-width: 1200px) {
+            left: 5px;
+            border: none;
+        }
     }
     &.-next {
         right: -45px;
+        @media (max-width: 1200px) {
+            right: 5px;
+            border: none;
+        }
     }
     .carousel-control__btn {
         position: relative;
@@ -56,6 +66,9 @@
         color: $body-background-color;
         .carousel-control__btn {
             color: white;
+        }
+        @media (max-width: 1200px) {
+            border: none;
         }
     }
 }

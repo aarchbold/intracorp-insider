@@ -7,15 +7,27 @@
     @media (max-width: $breakpoint-nav) {
         width: 50%;
     }
+    @media (max-width: $breakpoint-phone) {
+        float: none;
+        width: 100%;
+        margin-top: 15px;
+    }
     &.-long {
         width: 66.6%;
         @media (max-width: $breakpoint-nav) {
             width: 50%;
         }
+        @media (max-width: $breakpoint-phone) {
+            float: none;
+            width: 100%;
+        }
     }
     p {
         font-size: 30px;
         color: $body-font-color-light;
+        @media (max-width: $breakpoint-phablet) {
+            font-size: 22px;
+        }
     }
 }
 
@@ -67,6 +79,11 @@
         background-color: $progress-bar-bg;
         color: $body-font-color-ultralight;
         z-index: 1;
+        @media (max-width: $breakpoint-phone) {
+            top: 9px;
+            width: 35px;
+            height: 35px;
+        }
         &.-slot1 {
             left: 0;
         }
@@ -95,6 +112,9 @@
             transform: translateY(-50%);
             line-height: 1.4;
             z-index: 1;
+            @media (max-width: $breakpoint-phone) {
+                font-size: 20px;
+            }
         }
     }
 }

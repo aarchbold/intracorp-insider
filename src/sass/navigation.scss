@@ -7,6 +7,9 @@ nav {
 
 .nav-logo {
     height: 75px;
+    @media (max-width: $breakpoint-phone) {
+        height: 60px;
+    }
 }
 
 .nav-tools {
