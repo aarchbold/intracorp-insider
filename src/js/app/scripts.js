@@ -32,12 +32,12 @@ $.fn.tableToggle = function(){
         if ($('.btn-sales',$(this)).hasClass('fa-plus')) {
             $('.btn-sales',$(this)).removeClass('fa-plus');
             $('.btn-sales',$(this)).addClass('fa-minus');
-            $(this).next('.section-sales__table').show();
+            $('.section-sales__table', $(this).parent()).show();
             $(this).addClass('-open');
         } else {
             $('.btn-sales',$(this)).removeClass('fa-minus');
             $('.btn-sales',$(this)).addClass('fa-plus');
-            $(this).next('.section-sales__table').hide();
+            $('.section-sales__table', $(this).parent()).hide();
             $(this).removeClass('-open');
         }
     })

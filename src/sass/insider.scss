@@ -121,6 +121,7 @@
 
 .section-rewards__table {
     width: 100%;
+    min-width: 1000px;
     border-spacing: 4px;
     border-collapse: separate;
     thead {
@@ -276,6 +277,7 @@
 
 .section-sales__table {
     width: 100%;
+    min-width: 1000px;
     border-spacing: 4px;
     thead {
         tr {
