@@ -23,4 +23,5 @@ When making changes please make sure you are making changes in the "src" dir. Gu
 2. SASS (scss version)
 3. jQuery
 4. Modernizr
-5. Slick Carousel
+5. Font Awesome
+6. Slick Carousel
