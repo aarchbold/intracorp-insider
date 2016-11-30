@@ -1,14 +1,17 @@
-# html-boilerplate
-My starting off point for building small static marketing sites
+# Intracorp Insider Page
+Static HTML page for Intracorp
 
-## How to install
+## How to view
+1. Download this repo and open the .html file inside the webapp folder. All files inside the webapp directory are compiled and production ready.
+2. If you need to make changes the the JavaScript or CSS, see next section.
 
-1. Fork this repo
-2. Change the repository property in the package.json file to point to your repo.
-3. navigate to project directory with terminal
-4. run "npm install" to install gulp dependencies
-5. run "gulp" to build files
-6. run "gulp watch" to watch for changes in "src" directory
+## How to install for development
+1. Download or clone this repo
+2. Navigate to project directory with terminal
+3. Run "npm install" to install gulp dependencies
+4. Run "gulp" to build files and watch for changes
+5. Make changes to files in the src directory
+6. View the .html file inside the webapp directory in your favorite browser to view changes.
 
 ## Editing SCSS and JS files
 
@@ -19,6 +22,5 @@ When making changes please make sure you are making changes in the "src" dir. Gu
 1. HTML5 boilerplate
 2. SASS (scss version)
 3. jQuery
-4. jQuery Mobile
-5. Modernizr
-6. Lodash
+4. Modernizr
+5. Slick Carousel
